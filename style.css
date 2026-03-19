@@ -1,64 +1,108 @@
-body {
+* {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🔥 NAVBAR (DARK GLASS) */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding: 18px 60px;
   position: sticky;
-  top: 0;
-  background: rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
+  top: 20px;
+  margin: 20px auto;
+  width: 90%;
+
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(15px);
+
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .nav-links a {
   margin: 0 15px;
   text-decoration: none;
-  color: white;
+  color: #e2e8f0;
+  transition: 0.3s;
 }
 
-.logo {
-  font-weight: bold;
-  color: white;
+.nav-links a:hover {
+  color: #a5b4fc;
 }
 
+/* CV BUTTON */
 .cv-btn {
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 8px 18px;
+  border-radius: 25px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* HERO */
+.cv-btn:hover {
+  background: white;
+  color: black;
+}
+
+/* 🔥 HERO SECTION */
 .hero {
   height: 100vh;
   text-align: center;
   color: white;
+
   background: linear-gradient(135deg, #0f172a, #6366f1);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 70px;
+  background: linear-gradient(to right, #ffffff, #c7d2fe);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .subtitle {
+  font-size: 22px;
   opacity: 0.8;
 }
 
+.tag {
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+/* BUTTONS */
 .btn {
   padding: 12px 25px;
   margin: 10px;
   border-radius: 10px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .primary {
@@ -66,14 +110,25 @@ nav {
   color: white;
 }
 
+.primary:hover {
+  background: #4f46e5;
+}
+
 .secondary {
   border: 1px solid white;
   color: white;
 }
 
-/* SECTIONS */
+.secondary:hover {
+  background: white;
+  color: black;
+}
+
+/* 🔥 SECTIONS */
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .light {
@@ -86,21 +141,62 @@ nav {
   color: white;
 }
 
-/* CARDS */
+/* ABOUT BOX */
+.about-box {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+/* 🔥 GRID CARDS */
 .grid {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .card {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
   flex: 1;
+  min-width: 250px;
+
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
 }
 
-/* TIMELINE */
+.light .card {
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* 🔥 TIMELINE */
 .timeline-item {
-  margin: 20px 0;
+  margin: 30px 0;
+}
+
+.timeline-item h3 {
+  margin-bottom: 5px;
+}
+
+.timeline-item span {
+  opacity: 0.6;
+}
+
+/* 🔥 CONTACT */
+#contact a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
