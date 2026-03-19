@@ -1,115 +1,120 @@
 body{
   margin:0;
   font-family:sans-serif;
-  background:#0f172a;
-  color:white;
 }
 
+/* NAV */
 nav{
-  position:fixed;
-  width:100%;
   display:flex;
   justify-content:space-between;
   padding:15px 50px;
   background:#0f172a;
+  color:white;
 }
 
-nav ul{
-  display:flex;
-  gap:20px;
-}
-
-nav a{
-  color:#cbd5f5;
+.nav-links a{
+  margin-left:20px;
+  color:white;
   text-decoration:none;
 }
 
 /* HERO */
 .hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
   text-align:center;
+  padding:100px 20px;
   background:linear-gradient(135deg,#1e1b4b,#6366f1);
+  color:white;
 }
 
 .hero h1{
-  font-size:60px;
+  font-size:50px;
 }
 
 .hero span{
   color:#a5b4fc;
 }
 
-/* ABOUT */
-.about{
-  background:#f8fafc;
-  color:black;
-  padding:80px;
-}
-
-.about-container{
-  display:flex;
-  gap:40px;
-}
-
-.about-left,.about-right{
-  width:50%;
-}
-
-/* EXPERIENCE */
-.experience{
-  padding:80px;
-  background:#f8fafc;
-  color:black;
-}
-
-/* CONTACT */
-.contact{
-  padding:80px;
-  background:#f8fafc;
-  color:black;
-}
-
-.contact-wrapper{
-  display:flex;
-  gap:40px;
-}
-
-.contact-left{
-  width:50%;
-}
-
-.contact-box{
-  background:white;
-  padding:12px;
-  margin:10px 0;
-  border-radius:10px;
-}
-
-.contact-form{
-  width:50%;
-  background:white;
-  padding:20px;
-  border-radius:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-  width:100%;
-  margin:10px 0;
-  padding:10px;
-  border-radius:8px;
-  border:1px solid #ddd;
+.buttons{
+  margin:20px;
 }
 
 .btn{
   padding:10px 20px;
-  border-radius:8px;
   background:#6366f1;
   color:white;
+  margin:5px;
   text-decoration:none;
-  display:inline-block;
+}
+
+.outline{
+  background:transparent;
+  border:1px solid white;
+}
+
+.stats{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+}
+
+/* ABOUT */
+.about{
+  padding:60px;
+  background:#f8fafc;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  margin-top:10px;
+}
+
+.bar{
+  height:6px;
+  background:#ddd;
+  margin-bottom:10px;
+}
+
+.bar div{
+  height:100%;
+  background:#6366f1;
+}
+
+/* EXPERIENCE */
+.experience{
+  padding:60px;
+  background:#f1f5f9;
+}
+
+/* CONTACT */
+.contact{
+  padding:60px;
+  background:#f8fafc;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.form input,
+.form textarea{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+
+button{
+  padding:10px;
+  background:#6366f1;
+  color:white;
+  border:none;
 }
