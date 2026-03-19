@@ -20,15 +20,12 @@
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
-
-  <button class="cv-btn">Download CV</button>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <p class="tag">• QA TESTER • AI ENTHUSIAST • AWS LEARNER</p>
+<section class="hero reveal">
   <h1>Kaashif Nerekar</h1>
-  <p class="subtitle">Manual QA Tester | 2+ Years Experience</p>
+  <p class="subtitle">Manual QA Tester</p>
 
   <div>
     <a href="#experience" class="btn primary">View Experience</a>
@@ -37,73 +34,58 @@
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section light">
-  <h2>A people-first tester.</h2>
-
-  <div class="about-box">
-    <p>
-      Manual QA Tester with 2+ years of experience in functional, regression, and UAT testing.
-      Skilled in identifying bugs, working in Agile teams, and improving product quality.
-      Experienced with AI tools like ChatGPT and currently learning AWS.
-    </p>
-  </div>
+<section id="about" class="section light reveal">
+  <h2>About Me</h2>
+  <p>Manual QA Tester with 2+ years experience in testing and bug tracking.</p>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section light">
-  <h2>Career journey.</h2>
-
-  <div class="timeline-item">
-    <h3>Technical Analyst (QA)</h3>
-    <p>ZI Systech, Bandra</p>
-    <span>Aug 2023 – Present</span>
-
-    <ul>
-      <li>Reported 1000+ bugs using Azure DevOps</li>
-      <li>Performed Regression, UAT & Smoke Testing</li>
-      <li>Worked in Agile environment</li>
-    </ul>
-  </div>
+<section id="experience" class="section dark reveal">
+  <h2>Experience</h2>
+  <div class="card">Technical Analyst – ZI Systech</div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements" class="section dark">
-  <h2>Impact that matters.</h2>
-
+<section id="achievements" class="section light reveal">
+  <h2>Achievements</h2>
   <div class="grid">
-    <div class="card">Making an Impact Award</div>
+    <div class="card">1000+ Bugs</div>
     <div class="card">Employee of Sprint</div>
-    <div class="card">1000+ Bugs Reported</div>
+    <div class="card">QA Excellence Award</div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section light">
+<section id="skills" class="section dark reveal">
   <h2>Skills</h2>
-
   <div class="grid">
     <div class="card">Manual Testing</div>
-    <div class="card">Azure DevOps</div>
     <div class="card">API Testing</div>
-    <div class="card">SQL & Java</div>
-    <div class="card">AWS Basics</div>
-    <div class="card">AI Tools</div>
+    <div class="card">Azure DevOps</div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section light">
-  <h2>Let's connect.</h2>
-
+<section id="contact" class="section light reveal">
+  <h2>Contact</h2>
   <p>Email: kaashifnerekar@gmail.com</p>
-  <p>Phone: +91-7900007452</p>
-
-  <p>
-    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
-      LinkedIn Profile
-    </a>
-  </p>
 </section>
+
+<!-- JS ANIMATION -->
+<script>
+window.addEventListener("scroll", function() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el) => {
+    let windowHeight = window.innerHeight;
+    let elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
