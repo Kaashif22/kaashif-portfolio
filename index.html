@@ -9,16 +9,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #000000, #111);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
-  color: white;
-}
-
-@keyframes gradientBG {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  color: #111;
 }
 
 header {
@@ -28,11 +20,11 @@ header {
 
 h1 {
   font-size: 42px;
-  color: gold;
+  color: #1a73e8;
 }
 
 .hero p {
-  opacity: 0.8;
+  opacity: 0.7;
   font-size: 18px;
 }
 
@@ -40,14 +32,15 @@ h1 {
   display: inline-block;
   margin-top: 15px;
   padding: 12px 25px;
-  border: 1px solid gold;
+  border: 1px solid #1a73e8;
   border-radius: 30px;
+  color: #1a73e8;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: gold;
-  color: black;
+  background: #1a73e8;
+  color: white;
 }
 
 section {
@@ -57,26 +50,26 @@ section {
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
   padding: 25px;
   margin: 25px 0;
   border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
 .card:hover {
   transform: scale(1.02);
-  border-color: gold;
 }
 
 h2 {
-  color: gold;
+  color: #1a73e8;
 }
 
 a {
-  color: gold;
+  color: #1a73e8;
   text-decoration: none;
 }
 
