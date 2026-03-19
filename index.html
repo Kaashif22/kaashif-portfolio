@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaashif Nerekar</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaashif Nerekar</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <h2>KN</h2>
-  <div class="nav-links">
+<!-- NAV -->
+<nav class="nav">
+  <div class="logo">KN</div>
+  <div class="links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
@@ -21,18 +21,20 @@
 
 <!-- HERO -->
 <section class="hero">
-  <p>• QA TESTER • AI ENTHUSIAST</p>
-  <h1>Kaashif <span>Nerekar</span></h1>
-  <h3>Manual QA Tester</h3>
-  <p>2+ Years • Testing • Web Apps • India</p>
+  <span class="badge">• QA TESTER • AI ENTHUSIAST</span>
 
-  <div class="buttons">
-    <a href="#about" class="btn">View About</a>
-    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank" class="btn outline">LinkedIn</a>
+  <h1>Kaashif <span>Nerekar</span></h1>
+
+  <p class="role">Manual QA Tester</p>
+  <p class="meta">2+ Years • Testing • Web Apps • India</p>
+
+  <div class="btns">
+    <a href="#about" class="btn primary">View About</a>
+    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank" class="btn outline">LinkedIn ↗</a>
   </div>
 
   <div class="stats">
-    <div><h2>2+</h2><p>Years Experience</p></div>
+    <div><h2>2+</h2><p>Years</p></div>
     <div><h2>1000+</h2><p>Bugs</p></div>
     <div><h2>5+</h2><p>Projects</p></div>
     <div><h2>1</h2><p>Company</p></div>
@@ -41,26 +43,38 @@
 
 <!-- ABOUT -->
 <section id="about" class="about">
-  <div class="about-grid">
+  <div class="container">
 
-    <div>
+    <div class="left">
+      <span class="tag">ABOUT</span>
       <h2>A detail-oriented tester.</h2>
-      <p>Ensuring quality with precision.</p>
+      <p>Ensuring quality with precision and real-user thinking.</p>
 
       <div class="card">
-        I'm Kaashif Nerekar, Manual QA Tester with 2+ years experience in testing web apps and finding bugs.
+        I'm Kaashif Nerekar, a Manual QA Tester with 2+ years experience in testing web applications, identifying bugs, and improving user experience.
       </div>
     </div>
 
-    <div>
-      <p>Manual Testing 95%</p>
-      <div class="bar"><div style="width:95%"></div></div>
+    <div class="right">
+      <div class="skill">
+        <span>Manual Testing 95%</span>
+        <div class="bar"><div style="width:95%"></div></div>
+      </div>
 
-      <p>API Testing 90%</p>
-      <div class="bar"><div style="width:90%"></div></div>
+      <div class="skill">
+        <span>API Testing 90%</span>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
 
-      <p>Bug Tracking 92%</p>
-      <div class="bar"><div style="width:92%"></div></div>
+      <div class="skill">
+        <span>Bug Tracking 92%</span>
+        <div class="bar"><div style="width:92%"></div></div>
+      </div>
+
+      <div class="skill">
+        <span>SQL 85%</span>
+        <div class="bar"><div style="width:85%"></div></div>
+      </div>
     </div>
 
   </div>
@@ -68,37 +82,58 @@
 
 <!-- EXPERIENCE -->
 <section id="experience" class="experience">
-  <h2>Career Journey</h2>
+  <div class="container">
+    <span class="tag">EXPERIENCE</span>
+    <h2>Career journey.</h2>
 
-  <div class="card">
-    <h3>Technical Analyst - Sogolytics</h3>
-    <p>2023 - Present</p>
-    <p>Testing apps, finding bugs, improving quality.</p>
+    <div class="timeline">
+
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h3>Technical Analyst (QA)</h3>
+          <p>2023 - Present • Sogolytics</p>
+          <p>Testing web apps, identifying bugs, improving product quality.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="dot"></div>
+        <div class="content">
+          <h3>Manual QA Tester</h3>
+          <p>2022 - 2023</p>
+          <p>Executed test cases, tracked bugs, collaborated with devs.</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="contact">
-
-  <div class="contact-grid">
+  <div class="container contact-grid">
 
     <div>
-      <h2>Let's connect</h2>
+      <span class="tag">CONTACT</span>
+      <h2>Let's connect.</h2>
+      <p>Open to job opportunities.</p>
 
-      <div class="card">📧 kaashifnerekar@gmail.com</div>
-      <div class="card">📍 Mumbai, India</div>
-      <div class="card">💼 linkedin.com/in/kaashifnerekar</div>
+      <div class="contact-box">📧 kaashifnerekar@gmail.com</div>
+      <div class="contact-box">📍 Mumbai, India</div>
+      <div class="contact-box">💼 linkedin.com/in/kaashifnerekar</div>
+
+      <a href="#" class="btn primary">Download Resume</a>
     </div>
 
     <div class="form">
-      <input placeholder="Name">
+      <input placeholder="Your name">
       <input placeholder="Email">
       <textarea placeholder="Message"></textarea>
-      <button>Send Message</button>
+      <button>Send Message →</button>
     </div>
 
   </div>
-
 </section>
 
 </body>
