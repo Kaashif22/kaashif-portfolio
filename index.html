@@ -6,6 +6,10 @@
 <title>Kaashif Nerekar</title>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -24,6 +28,11 @@ nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c7d2fe;
 }
 
 /* HERO */
@@ -78,6 +87,11 @@ nav a {
   border-radius: 15px;
   margin: 15px 0;
   backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 h2 {
@@ -93,10 +107,10 @@ h2 {
 <nav>
   <div><b>KN</b></div>
   <div>
-    <a href="#">About</a>
-    <a href="#">Experience</a>
-    <a href="#">Skills</a>
-    <a href="#">Contact</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
@@ -105,14 +119,15 @@ h2 {
   <h1>Kaashif Nerekar</h1>
   <p>Manual QA Tester | 2 Years Experience | Agile & AI-driven Testing</p>
 
-  <button class="btn primary">View Experience</button>
+  <button class="btn primary" onclick="document.getElementById('experience').scrollIntoView()">View Experience</button>
+
   <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
     <button class="btn secondary">LinkedIn</button>
   </a>
 </div>
 
 <!-- ABOUT -->
-<div class="section">
+<div class="section" id="about">
   <h2>About Me</h2>
   <div class="card">
     <p>
@@ -125,7 +140,7 @@ h2 {
 </div>
 
 <!-- EXPERIENCE -->
-<div class="section">
+<div class="section" id="experience">
   <h2>Experience</h2>
   <div class="card">
     <h3>Technical Analyst (QA) – ZI Systech</h3>
@@ -141,7 +156,7 @@ h2 {
 </div>
 
 <!-- SKILLS -->
-<div class="section">
+<div class="section" id="skills">
   <h2>Skills</h2>
   <div class="card">
     <ul>
@@ -155,25 +170,13 @@ h2 {
   </div>
 </div>
 
-<!-- ACHIEVEMENTS -->
-<div class="section">
-  <h2>Achievements</h2>
-  <div class="card">
-    <ul>
-      <li>🏆 Employee of the Sprint (Sprint 32.2)</li>
-      <li>🏆 Making an Impact Award</li>
-      <li>🏆 Best Student Award (SSC)</li>
-    </ul>
-  </div>
-</div>
-
 <!-- CONTACT -->
-<div class="section">
+<div class="section" id="contact">
   <h2>Contact</h2>
   <div class="card">
-    <p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
+    <p>Email: <a href="mailto:kaashifnerekar@gmail.com" style="color:white;">kaashifnerekar@gmail.com</a></p>
     <p>Phone: +91-7900007452</p>
-    <p><a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">LinkedIn Profile</a></p>
+    <p><a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank" style="color:white;">LinkedIn Profile</a></p>
   </div>
 </div>
 
