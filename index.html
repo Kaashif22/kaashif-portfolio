@@ -18,10 +18,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 40px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 50px;
-  margin: 20px;
 }
 
 nav a {
@@ -44,7 +40,7 @@ nav a {
 }
 
 .hero p {
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 20px;
 }
 
@@ -68,46 +64,24 @@ nav a {
   color: white;
 }
 
-/* STATS */
-.stats {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.stats div {
-  text-align: center;
-}
-
-.stats h2 {
-  font-size: 30px;
-}
-
 /* SECTION */
 .section {
   padding: 60px 20px;
-  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
+/* CARDS */
 .card {
   background: rgba(255,255,255,0.1);
   padding: 20px;
   border-radius: 15px;
-  width: 250px;
+  margin: 15px 0;
   backdrop-filter: blur(10px);
-  transition: 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+h2 {
+  color: #c7d2fe;
 }
 </style>
 
@@ -121,7 +95,7 @@ nav a {
   <div>
     <a href="#">About</a>
     <a href="#">Experience</a>
-    <a href="#">Projects</a>
+    <a href="#">Skills</a>
     <a href="#">Contact</a>
   </div>
 </nav>
@@ -129,56 +103,78 @@ nav a {
 <!-- HERO -->
 <div class="hero">
   <h1>Kaashif Nerekar</h1>
-  <p>Manual QA Tester | Ensuring Quality & User Experience</p>
+  <p>Manual QA Tester | 2 Years Experience | Agile & AI-driven Testing</p>
 
   <button class="btn primary">View Experience</button>
   <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
     <button class="btn secondary">LinkedIn</button>
   </a>
+</div>
 
-  <!-- STATS -->
-  <div class="stats">
-    <div>
-      <h2>2+</h2>
-      <p>Years Experience</p>
-    </div>
-    <div>
-      <h2>10+</h2>
-      <p>Projects Tested</p>
-    </div>
-    <div>
-      <h2>100+</h2>
-      <p>Bugs Found</p>
-    </div>
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      Manual QA Tester with 2 years of experience in functional, regression, and UAT testing. 
+      Skilled in identifying critical bugs and ensuring high-quality product delivery. 
+      Experienced in Agile environments and using AI tools like ChatGPT and Copilot 
+      to improve testing efficiency.
+    </p>
   </div>
 </div>
 
-<!-- PROJECTS -->
+<!-- EXPERIENCE -->
 <div class="section">
-  <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Web Testing</h3>
-      <p>Tested survey platform and found critical bugs</p>
-    </div>
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Technical Analyst (QA) – ZI Systech</h3>
+    <p>Aug 2023 – Present</p>
+    <ul>
+      <li>Reported and tracked 1000+ bugs using Azure DevOps</li>
+      <li>Performed Smoke, Regression, Compatibility & UAT testing</li>
+      <li>Worked in Agile/Scrum environment</li>
+      <li>Created and executed detailed test cases</li>
+      <li>Collaborated with developers and product teams</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="card">
-      <h3>API Testing</h3>
-      <p>Performed API testing using Postman</p>
-    </div>
+<!-- SKILLS -->
+<div class="section">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li>Manual Testing (Functional, Regression, UAT)</li>
+      <li>Azure DevOps, Excel</li>
+      <li>STLC, Bug Lifecycle</li>
+      <li>API Testing (Postman)</li>
+      <li>AWS (EC2, S3, IAM - Learning)</li>
+      <li>AI Tools (ChatGPT, Copilot)</li>
+    </ul>
+  </div>
+</div>
 
-    <div class="card">
-      <h3>Bug Tracking</h3>
-      <p>Managed bugs using Azure DevOps</p>
-    </div>
+<!-- ACHIEVEMENTS -->
+<div class="section">
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>🏆 Employee of the Sprint (Sprint 32.2)</li>
+      <li>🏆 Making an Impact Award</li>
+      <li>🏆 Best Student Award (SSC)</li>
+    </ul>
   </div>
 </div>
 
 <!-- CONTACT -->
 <div class="section">
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
-  <p><a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">LinkedIn Profile</a></p>
+  <div class="card">
+    <p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
+    <p>Phone: +91-7900007452</p>
+    <p><a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">LinkedIn Profile</a></p>
+  </div>
 </div>
 
 </body>
