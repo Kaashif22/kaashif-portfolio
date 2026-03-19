@@ -1,128 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaashif Nerekar</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaashif Nerekar Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="logo">KN</div>
+    <!-- NAVBAR -->
+    <nav>
+        <h2>KN</h2>
 
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- HERO -->
-<section class="hero">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
 
-  <div class="badge">• QA TESTER • AI ENTHUSIAST</div>
+        <div class="badge">• QA TESTER • AI ENTHUSIAST</div>
 
-  <h1>
-    Kaashif <span>Nerekar</span>
-  </h1>
+        <h1>
+            Kaashif <span>Nerekar</span>
+        </h1>
 
-  <p class="subtitle">Manual QA Tester</p>
+        <p class="subtitle">Manual QA Tester</p>
 
-  <p class="meta">
-    2+ Years • Testing • Web Apps • India
-  </p>
+        <p class="meta">
+            2+ Years • Testing • Web Apps • India
+        </p>
 
-  <div class="hero-buttons">
-    <a href="#experience" class="btn primary">View Experience</a>
-    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank" class="btn secondary">
-      LinkedIn ↗
-    </a>
-  </div>
+        <div class="hero-buttons">
+            <a href="#experience" class="btn primary">View Experience</a>
 
-  <div class="divider"></div>
+            <a href="https://www.linkedin.com/in/kaashifnerekar" 
+               target="_blank" 
+               class="btn secondary">
+               LinkedIn ↗
+            </a>
+        </div>
 
-  <div class="stats">
-    <div>
-      <h2>2+</h2>
-      <p>Years Experience</p>
-    </div>
+        <div class="divider"></div>
 
-    <div>
-      <h2>1000+</h2>
-      <p>Bugs Reported</p>
-    </div>
+        <div class="stats">
+            <div>
+                <h2>2+</h2>
+                <p>Years Experience</p>
+            </div>
 
-    <div>
-      <h2>5+</h2>
-      <p>Projects</p>
-    </div>
+            <div>
+                <h2>1000+</h2>
+                <p>Bugs Reported</p>
+            </div>
 
-    <div>
-      <h2>1</h2>
-      <p>Company</p>
-    </div>
-  </div>
+            <div>
+                <h2>5+</h2>
+                <p>Projects</p>
+            </div>
 
-</section>
+            <div>
+                <h2>1</h2>
+                <p>Company</p>
+            </div>
+        </div>
 
-<!-- ABOUT -->
-<section id="about" class="section light reveal">
-  <h2>About Me</h2>
-  <p>Manual QA Tester with 2+ years experience in testing and bug tracking.</p>
-</section>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section dark reveal">
-  <h2>Experience</h2>
-  <div class="card">Technical Analyst – ZI Systech</div>
-</section>
+    <!-- ABOUT SECTION -->
+    <section id="about" style="padding:100px 20px; text-align:center;">
+        <h2>About Me</h2>
+        <p style="max-width:700px; margin:auto; opacity:0.7;">
+            I am a Manual QA Tester with 2+ years of experience in testing web applications, 
+            identifying bugs, and ensuring high-quality software delivery.
+        </p>
+    </section>
 
-<!-- ACHIEVEMENTS -->
-<section id="achievements" class="section light reveal">
-  <h2>Achievements</h2>
-  <div class="grid">
-    <div class="card">1000+ Bugs</div>
-    <div class="card">Employee of Sprint</div>
-    <div class="card">QA Excellence Award</div>
-  </div>
-</section>
+    <!-- EXPERIENCE -->
+    <section id="experience" style="padding:100px 20px; text-align:center;">
+        <h2>Experience</h2>
+        <p style="opacity:0.7;">Working at Sogolytics as Technical Analyst</p>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section dark reveal">
-  <h2>Skills</h2>
-  <div class="grid">
-    <div class="card">Manual Testing</div>
-    <div class="card">API Testing</div>
-    <div class="card">Azure DevOps</div>
-  </div>
-</section>
+    <!-- SKILLS -->
+    <section id="skills" style="padding:100px 20px; text-align:center;">
+        <h2>Skills</h2>
+        <p style="opacity:0.7;">
+            Manual Testing, API Testing, SQL, Azure DevOps, Bug Tracking
+        </p>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section light reveal">
-  <h2>Contact</h2>
-  <p>Email: kaashifnerekar@gmail.com</p>
-</section>
+    <!-- CONTACT -->
+    <section id="contact" style="padding:100px 20px; text-align:center;">
+        <h2>Contact</h2>
+        <p>Email: kaashifnerekar@gmail.com</p>
 
-<!-- JS ANIMATION -->
-<script>
-window.addEventListener("scroll", function() {
-  let reveals = document.querySelectorAll(".reveal");
-
-  reveals.forEach((el) => {
-    let windowHeight = window.innerHeight;
-    let elementTop = el.getBoundingClientRect().top;
-
-    if (elementTop < windowHeight - 100) {
-      el.classList.add("active");
-    }
-  });
-});
-</script>
+        <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
+            LinkedIn Profile
+        </a>
+    </section>
 
 </body>
 </html>
