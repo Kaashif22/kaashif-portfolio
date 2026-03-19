@@ -3,134 +3,183 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaashif Nerekar | QA Tester</title>
+<title>Kaashif Nerekar</title>
 
 <style>
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
-  color: #111;
+  background: linear-gradient(135deg, #0f172a, #4f46e5);
+  color: white;
 }
 
-header {
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  margin: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
   text-align: center;
   padding: 100px 20px;
 }
 
-h1 {
-  font-size: 42px;
-  color: #1a73e8;
+.hero h1 {
+  font-size: 60px;
+  background: linear-gradient(to right, #fff, #c7d2fe);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .hero p {
-  opacity: 0.7;
-  font-size: 18px;
+  opacity: 0.8;
+  font-size: 20px;
 }
 
+/* BUTTONS */
 .btn {
-  display: inline-block;
-  margin-top: 15px;
   padding: 12px 25px;
-  border: 1px solid #1a73e8;
-  border-radius: 30px;
-  color: #1a73e8;
-  transition: 0.3s;
+  margin: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background: #1a73e8;
+.primary {
+  background: #6366f1;
   color: white;
 }
 
-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+.secondary {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats h2 {
+  font-size: 30px;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  background: rgba(255,255,255,0.7);
-  backdrop-filter: blur(10px);
-  padding: 25px;
-  margin: 25px 0;
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
   border-radius: 15px;
-  border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  width: 250px;
+  backdrop-filter: blur(10px);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.02);
-}
-
-h2 {
-  color: #1a73e8;
-}
-
-a {
-  color: #1a73e8;
-  text-decoration: none;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.6;
+  transform: translateY(-10px);
 }
 </style>
+
 </head>
 
 <body>
 
-<header class="hero">
+<!-- NAVBAR -->
+<nav>
+  <div><b>KN</b></div>
+  <div>
+    <a href="#">About</a>
+    <a href="#">Experience</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
   <h1>Kaashif Nerekar</h1>
   <p>Manual QA Tester | Ensuring Quality & User Experience</p>
-  <a class="btn" href="#">Download Resume</a>
-</header>
 
-<section>
+  <button class="btn primary">View Experience</button>
+  <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
+    <button class="btn secondary">LinkedIn</button>
+  </a>
 
-<div class="card">
-<h2>About Me</h2>
-<p>I am a Manual QA Tester with 2 years of experience at Sogolytics. I focus on delivering high-quality software through detailed testing and bug tracking.</p>
+  <!-- STATS -->
+  <div class="stats">
+    <div>
+      <h2>2+</h2>
+      <p>Years Experience</p>
+    </div>
+    <div>
+      <h2>10+</h2>
+      <p>Projects Tested</p>
+    </div>
+    <div>
+      <h2>100+</h2>
+      <p>Bugs Found</p>
+    </div>
+  </div>
 </div>
 
-<div class="card">
-<h2>Skills</h2>
-<ul>
-<li>Manual Testing</li>
-<li>API Testing</li>
-<li>Test Case Writing</li>
-<li>Bug Tracking (Azure DevOps)</li>
-</ul>
+<!-- PROJECTS -->
+<div class="section">
+  <h2>Projects</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Web Testing</h3>
+      <p>Tested survey platform and found critical bugs</p>
+    </div>
+
+    <div class="card">
+      <h3>API Testing</h3>
+      <p>Performed API testing using Postman</p>
+    </div>
+
+    <div class="card">
+      <h3>Bug Tracking</h3>
+      <p>Managed bugs using Azure DevOps</p>
+    </div>
+  </div>
 </div>
 
-<div class="card">
-<h2>Projects</h2>
-<ul>
-<li>Tested survey platform – found critical bugs</li>
-<li>Performed API testing using Postman</li>
-</ul>
+<!-- CONTACT -->
+<div class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
+  <p><a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">LinkedIn Profile</a></p>
 </div>
-
-<div class="card">
-<h2>Experience</h2>
-<p><strong>Sogolytics</strong> - Technical Analyst</p>
-<p>Worked on testing web applications, identifying bugs, and improving product quality.</p>
-</div>
-
-<div class="card">
-<h2>Contact</h2>
-<p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
-<p>LinkedIn: <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">View Profile</a></p>
-</div>
-
-</section>
-
-<footer>
-<p>© 2026 Kaashif Nerekar</p>
-</footer>
 
 </body>
 </html>
