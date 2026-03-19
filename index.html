@@ -1,84 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaashif Nerekar | QA Tester</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaashif Nerekar | QA Tester</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-      color: white;
-      scroll-behavior: smooth;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #000000, #111);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-    }
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
-    h1 {
-      font-size: 40px;
-      color: gold;
-    }
+header {
+  text-align: center;
+  padding: 100px 20px;
+}
 
-    .hero p {
-      font-size: 18px;
-      opacity: 0.8;
-    }
+h1 {
+  font-size: 42px;
+  color: gold;
+}
 
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
+.hero p {
+  opacity: 0.8;
+  font-size: 18px;
+}
 
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 15px;
-      border: 1px solid rgba(255,255,255,0.1);
-      transition: 0.3s;
-    }
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: 1px solid gold;
+  border-radius: 30px;
+  transition: 0.3s;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      border-color: gold;
-    }
+.btn:hover {
+  background: gold;
+  color: black;
+}
 
-    h2 {
-      color: gold;
-    }
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
 
-    a {
-      color: gold;
-      text-decoration: none;
-    }
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 15px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
 
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin-top: 10px;
-      border: 1px solid gold;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
+.card:hover {
+  transform: scale(1.02);
+  border-color: gold;
+}
 
-    .btn:hover {
-      background: gold;
-      color: black;
-    }
+h2 {
+  color: gold;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      opacity: 0.6;
-    }
-  </style>
+a {
+  color: gold;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+</style>
 </head>
 
 <body>
@@ -90,44 +97,46 @@
 </header>
 
 <section>
-  <div class="card">
-    <h2>About Me</h2>
-    <p>I am a Manual QA Tester with 2 years of experience at Sogolytics. Skilled in functional testing, API testing, and bug tracking.</p>
-  </div>
 
-  <div class="card">
-    <h2>Skills</h2>
-    <ul>
-      <li>Manual Testing</li>
-      <li>API Testing</li>
-      <li>Test Case Writing</li>
-      <li>Bug Tracking (Azure DevOps)</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Projects</h2>
-    <ul>
-      <li>Tested survey platform - identified critical bugs</li>
-      <li>API testing using Postman</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <h2>Experience</h2>
-    <p><strong>Sogolytics</strong> - Technical Analyst</p>
-    <p>Worked on testing web applications, identifying bugs, and improving product quality.</p>
-  </div>
-
- <div class="card">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">kaashifnerekar</a></p>
+<div class="card">
+<h2>About Me</h2>
+<p>I am a Manual QA Tester with 2 years of experience at Sogolytics. I focus on delivering high-quality software through detailed testing and bug tracking.</p>
 </div>
+
+<div class="card">
+<h2>Skills</h2>
+<ul>
+<li>Manual Testing</li>
+<li>API Testing</li>
+<li>Test Case Writing</li>
+<li>Bug Tracking (Azure DevOps)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Projects</h2>
+<ul>
+<li>Tested survey platform – found critical bugs</li>
+<li>Performed API testing using Postman</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+<p><strong>Sogolytics</strong> - Technical Analyst</p>
+<p>Worked on testing web applications, identifying bugs, and improving product quality.</p>
+</div>
+
+<div class="card">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:kaashifnerekar@gmail.com">kaashifnerekar@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">View Profile</a></p>
+</div>
+
 </section>
 
 <footer>
-  <p>© 2026 Kaashif Nerekar</p>
+<p>© 2026 Kaashif Nerekar</p>
 </footer>
 
 </body>
