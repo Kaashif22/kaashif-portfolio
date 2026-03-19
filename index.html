@@ -5,153 +5,101 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kaashif Nerekar</title>
 
-<style>
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0f172a, #4f46e5);
-  color: white;
-}
-
-/* NAVBAR */
-nav {
-  position: sticky;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  background: rgba(0,0,0,0.2);
-  backdrop-filter: blur(10px);
-}
-
-nav a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 70px;
-  background: linear-gradient(to right, #fff, #c7d2fe);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.hero p {
-  opacity: 0.8;
-  font-size: 22px;
-}
-
-/* BUTTONS */
-.btn {
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.primary {
-  background: #6366f1;
-  color: white;
-}
-
-.secondary {
-  border: 1px solid white;
-  color: white;
-}
-
-/* SECTION */
-.section {
-  min-height: 100vh;
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* CARD */
-.card {
-  background: rgba(255,255,255,0.1);
-  padding: 20px;
-  border-radius: 15px;
-  margin: 20px 0;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-</style>
-
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav>
-  <div><b>KN</b></div>
-  <div>
+  <div class="logo">KN</div>
+  <div class="nav-links">
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#insights">Insights</a>
     <a href="#contact">Contact</a>
   </div>
+  <button class="cv-btn">Download CV</button>
 </nav>
 
 <!-- HERO -->
-<div class="hero">
+<section class="hero">
+  <p class="tag">• QA TESTER • AI ENTHUSIAST</p>
   <h1>Kaashif Nerekar</h1>
-  <p>Manual QA Tester</p>
+  <p class="subtitle">Manual QA Tester</p>
 
-  <button class="btn primary">View Experience</button>
-  <button class="btn secondary">LinkedIn</button>
-</div>
+  <div class="hero-buttons">
+    <a href="#experience" class="btn primary">View Experience</a>
+    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank" class="btn secondary">LinkedIn</a>
+  </div>
+</section>
 
 <!-- ABOUT -->
-<div class="section" id="about">
-  <h2>About</h2>
-  <div class="card">
-    <p>Manual QA Tester with 2 years experience in testing and bug tracking.</p>
+<section id="about" class="section light">
+  <h2>A people-first tester.</h2>
+  <p class="desc">Blending logic with user experience.</p>
+
+  <div class="about-box">
+    <p>
+      I'm Kaashif, a Manual QA Tester with 2+ years experience in web application testing.
+      Skilled in bug tracking, API testing and Agile methodology.
+    </p>
   </div>
-</div>
+</section>
 
 <!-- EXPERIENCE -->
-<div class="section" id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <p>Technical Analyst – ZI Systech</p>
-  </div>
-</div>
+<section id="experience" class="section light">
+  <h2>Career journey.</h2>
 
-<!-- SKILLS -->
-<div class="section" id="skills">
-  <h2>Skills</h2>
-  <div class="card">
-    <p>Manual Testing, API Testing, Azure DevOps</p>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Technical Analyst</h3>
+      <p>Sogolytics</p>
+      <span>2023 - Present</span>
+    </div>
+
+    <div class="timeline-item">
+      <h3>QA Tester</h3>
+      <p>Previous Role</p>
+      <span>2022 - 2023</span>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="section dark">
+  <h2>Impact that matters.</h2>
+
+  <div class="grid">
+    <div class="card">1000+ Bugs Reported</div>
+    <div class="card">Agile Team Experience</div>
+    <div class="card">API Testing Expert</div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights" class="section light">
+  <h2>Insights.</h2>
+
+  <div class="grid">
+    <div class="card">Future of QA with AI</div>
+    <div class="card">Bug Tracking Best Practices</div>
+    <div class="card">Manual vs Automation</div>
+  </div>
+</section>
 
 <!-- CONTACT -->
-<div class="section" id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: kaashifnerekar@gmail.com</p>
-  </div>
-</div>
+<section id="contact" class="section light">
+  <h2>Let's connect.</h2>
+
+  <p>Email: kaashifnerekar@gmail.com</p>
+  <p>
+    <a href="https://www.linkedin.com/in/kaashifnerekar" target="_blank">
+      LinkedIn Profile
+    </a>
+  </p>
+</section>
 
 </body>
 </html>
