@@ -6,18 +6,18 @@
 }
 
 body {
-  background: linear-gradient(to right, #0a0a1a, #111);
-  color: white;
+  scroll-behavior: smooth;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
   position: fixed;
   width: 100%;
-  background: rgba(0,0,0,0.6);
+  background: #111;
+  color: white;
 }
 
 nav ul {
@@ -25,78 +25,64 @@ nav ul {
   gap: 20px;
 }
 
+nav ul li {
+  list-style: none;
+}
+
 nav a {
   color: white;
   text-decoration: none;
 }
 
-/* HERO */
-.hero {
+/* SECTIONS */
+.section {
+  height: 100vh;
+  padding: 120px 50px;
+}
+
+.home {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  padding: 100px;
+  background: linear-gradient(to right, #000, #222);
+  color: white;
 }
 
-/* LEFT */
-.left {
-  width: 40%;
-}
-
-.left span {
+.home h1 span {
   color: #00adb5;
 }
 
-/* CENTER */
-.center {
-  width: 50%;
-  text-align: center;
-}
-
-.center span {
-  color: #7f8cff;
-}
-
-.tag {
-  color: #7f8cff;
-}
-
-.role {
-  margin: 10px 0;
-}
-
-/* BUTTONS */
-.buttons a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
-  border: 1px solid #7f8cff;
-  border-radius: 6px;
+.dark {
+  background: #111;
   color: white;
-  text-decoration: none;
 }
 
-/* STATS */
-.stats {
+/* CARD */
+.card {
+  margin-top: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* SKILLS */
+.skills {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 20px;
 }
 
-.stats h2 {
-  color: #7f8cff;
+.skills span {
+  background: #00adb5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
-/* RESPONSIVE */
-@media(max-width: 900px){
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .left, .center {
-    width: 100%;
-  }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
 }
