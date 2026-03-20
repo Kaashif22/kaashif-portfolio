@@ -1,124 +1,88 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #0a0f2c, #1a1f4d);
-  color: white;
-  padding-top: 90px;
+  scroll-behavior: smooth;
 }
 
 /* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 900px;
-
+nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  padding: 12px 25px;
-  border-radius: 40px;
-
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  background: #111;
+  color: white;
 }
 
-.menu {
+nav ul {
   display: flex;
   gap: 20px;
 }
 
-.menu a {
-  color: #bbb;
-  text-decoration: none;
-  font-size: 14px;
+nav ul li {
+  list-style: none;
 }
 
-.menu a:hover {
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+  height: 100vh;
+  padding: 120px 50px;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #000, #222);
   color: white;
 }
 
-/* SECTION */
-.section {
-  padding: 100px 20px;
-  text-align: center;
+.home h1 span {
+  color: #00adb5;
 }
 
-.section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-/* DARK VARIATION */
 .dark {
-  background: #12163a;
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;
+  background: #111;
+  color: white;
 }
 
 /* CARD */
 .card {
-  padding: 25px;
-  width: 240px;
-
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-
-  transition: 0.3s;
+  margin-top: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
-
-/* TAGS */
-.tags span {
-  margin: 8px;
-  padding: 10px 18px;
-  border-radius: 20px;
-  background: rgba(255,255,255,0.08);
-  display: inline-block;
-}
-
-/* HERO */
-.hero {
-  height: 90vh;
+/* SKILLS */
+.skills {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.hero h1 {
-  font-size: 60px;
+.skills span {
+  background: #00adb5;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
-.hero span {
-  color: #7f8cff;
-}
-
-.hero p {
-  margin-top: 15px;
-  color: #ccc;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+  color: white;
 }
