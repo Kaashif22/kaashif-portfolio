@@ -6,83 +6,109 @@
 }
 
 body {
-  scroll-behavior: smooth;
+  background: #0d0d1a;
+  color: white;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
   position: fixed;
   width: 100%;
-  background: #111;
-  color: white;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
 }
 
-nav ul {
+/* HERO */
+.hero {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 100px;
 }
 
-nav ul li {
-  list-style: none;
+/* LEFT */
+.hero-left {
+  max-width: 400px;
 }
 
-nav a {
-  color: white;
+.hero-left span {
+  color: #00adb5;
+}
+
+/* CENTER */
+.hero-center {
+  text-align: center;
+}
+
+.tag {
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+.big-name {
+  font-size: 50px;
+}
+
+.big-name span {
+  color: #7f8cff;
+}
+
+.role {
+  margin-top: 10px;
+}
+
+.info {
+  margin: 10px 0;
+  opacity: 0.7;
+}
+
+/* BUTTONS */
+.buttons {
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #7f8cff;
+  margin: 5px;
   text-decoration: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.primary {
+  background: #7f8cff;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stats h2 {
+  color: #7f8cff;
 }
 
 /* SECTIONS */
 .section {
-  height: 100vh;
-  padding: 120px 50px;
-}
-
-.home {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(to right, #000, #222);
-  color: white;
-}
-
-.home h1 span {
-  color: #00adb5;
+  padding: 100px 50px;
 }
 
 .dark {
   background: #111;
-  color: white;
 }
 
 /* CARD */
 .card {
-  margin-top: 20px;
-  background: #222;
+  background: #1a1a2e;
   padding: 20px;
+  margin-top: 20px;
   border-radius: 10px;
-}
-
-/* SKILLS */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.skills span {
-  background: #00adb5;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 20px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: black;
-  color: white;
 }
