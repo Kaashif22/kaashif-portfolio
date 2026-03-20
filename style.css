@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  scroll-behavior: smooth;
+  background: linear-gradient(to right, #0a0a1a, #111);
+  color: white;
 }
 
 /* NAVBAR */
@@ -16,8 +17,8 @@ nav {
   padding: 20px 50px;
   position: fixed;
   width: 100%;
-  background: #111;
-  color: white;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -25,43 +26,96 @@ nav ul {
   gap: 20px;
 }
 
-nav ul li {
-  list-style: none;
-}
-
 nav a {
   color: white;
   text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #7f8cff;
 }
 
 /* SECTIONS */
 .section {
-  height: 100vh;
   padding: 120px 50px;
+  min-height: 100vh;
 }
 
+/* HERO */
 .home {
   display: flex;
   align-items: center;
-  background: linear-gradient(to right, #000, #222);
+  justify-content: center;
+  text-align: center;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  max-width: 700px;
+}
+
+.tag {
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid #7f8cff;
+  margin: 5px;
+  text-decoration: none;
   color: white;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-.home h1 span {
-  color: #00adb5;
+.btn:hover {
+  background: #7f8cff;
 }
 
+.primary {
+  background: #7f8cff;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.stats h2 {
+  color: #7f8cff;
+}
+
+/* DARK */
 .dark {
   background: #111;
-  color: white;
 }
 
 /* CARD */
 .card {
   margin-top: 20px;
-  background: #222;
+  background: #1a1a2e;
   padding: 20px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 /* SKILLS */
@@ -69,12 +123,10 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-top: 20px;
 }
 
 .skills span {
-  background: #00adb5;
-  color: white;
+  background: #7f8cff;
   padding: 10px 15px;
   border-radius: 20px;
 }
@@ -84,5 +136,11 @@ footer {
   text-align: center;
   padding: 20px;
   background: black;
-  color: white;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .stats {
+    flex-direction: column;
+  }
 }
