@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #0a0a1a, #111);
+  background: #0a0a1a;
   color: white;
 }
 
@@ -17,7 +17,7 @@ nav {
   padding: 20px 50px;
   position: fixed;
   width: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.7);
   backdrop-filter: blur(10px);
 }
 
@@ -42,6 +42,24 @@ nav a:hover {
   min-height: 100vh;
 }
 
+/* DARK */
+.dark {
+  background: #111;
+  color: white;
+}
+
+/* LIGHT */
+.light {
+  background: #f5f7ff;
+  color: #111;
+}
+
+.light h2,
+.light p,
+.light li {
+  color: #111;
+}
+
 /* HERO */
 .home {
   display: flex;
@@ -50,14 +68,12 @@ nav a:hover {
   text-align: center;
 }
 
-/* HERO CONTENT */
 .hero-content {
   max-width: 700px;
 }
 
 .tag {
   color: #7f8cff;
-  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -100,11 +116,6 @@ nav a:hover {
   color: #7f8cff;
 }
 
-/* DARK */
-.dark {
-  background: #111;
-}
-
 /* CARD */
 .card {
   margin-top: 20px;
@@ -116,6 +127,12 @@ nav a:hover {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+/* FIX CARD IN LIGHT */
+.light .card {
+  background: white;
+  color: #111;
 }
 
 /* SKILLS */
