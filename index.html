@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>Kaashif Nerekar | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <!-- NAVBAR -->
@@ -14,6 +18,7 @@
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -21,10 +26,27 @@
 
 <!-- HOME -->
 <section id="home" class="section home">
-  <div>
+  <div class="hero-content">
+    <p class="tag">• QA ENGINEER • AWS LEARNER</p>
+
     <h1>Hi, I'm <span>Kaashif Nerekar</span></h1>
     <h3>Manual QA Tester</h3>
-    <p>Ensuring quality, finding bugs & building reliable software.</p>
+
+    <p class="subtitle">
+      Ensuring quality, finding bugs & building reliable software.
+    </p>
+
+    <div class="buttons">
+      <a href="#experience" class="btn primary">View Experience</a>
+      <a href="#" class="btn">LinkedIn</a>
+    </div>
+
+    <!-- STATS -->
+    <div class="stats">
+      <div><h2>2+</h2><p>Years</p></div>
+      <div><h2>1000+</h2><p>Bugs</p></div>
+      <div><h2>10+</h2><p>Projects</p></div>
+    </div>
   </div>
 </section>
 
@@ -33,39 +55,59 @@
   <h2>About Me</h2>
   <p>
     Manual QA Tester with 2+ years of experience in functional, regression, and UAT testing.
-    Skilled in identifying critical bugs and working in Agile environments.
-    Currently learning AWS to grow into Cloud domain.
+    Skilled in Agile environments and bug tracking using Azure DevOps.
+    Currently learning AWS Cloud to expand into modern infrastructure testing.
   </p>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section dark">
   <h2>Experience</h2>
+
   <div class="card">
     <h3>Technical Analyst (QA)</h3>
-    <p>ZI Systech, Bandra | Aug 2023 - Present</p>
+    <p>ZI Systech | Aug 2023 - Present</p>
     <ul>
-      <li>Performed manual testing across multiple modules</li>
-      <li>Reported 1000+ bugs using Azure DevOps</li>
-      <li>Worked on Smoke, Regression & UAT testing</li>
-      <li>Collaborated in Agile/Scrum environment</li>
+      <li>Performed functional, regression, and UAT testing</li>
+      <li>Reported and tracked 1000+ bugs</li>
+      <li>Worked in Agile/Scrum environment</li>
+      <li>Collaborated with dev & product teams</li>
     </ul>
   </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Participation Transformer</h3>
+    <p>Handled QA testing, ensured smooth deployment & performance.</p>
+  </div>
+
+  <div class="card">
+    <h3>Directory Feature</h3>
+    <p>Tested newly launched feature and contributed to sprint success.</p>
+  </div>
+
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section">
   <h2>Skills</h2>
+
   <div class="skills">
     <span>Manual Testing</span>
     <span>Regression Testing</span>
     <span>UAT</span>
     <span>Azure DevOps</span>
     <span>SQL</span>
-    <span>AWS (Learning)</span>
+    <span>AWS</span>
     <span>Agile</span>
     <span>STLC</span>
   </div>
+
 </section>
 
 <!-- CONTACT -->
@@ -77,7 +119,7 @@
 </section>
 
 <footer>
-  <p>© 2026 Kaashif Nerekar | Coming Soon More Features 🚀</p>
+  <p>© 2026 Kaashif Nerekar</p>
 </footer>
 
 </body>
