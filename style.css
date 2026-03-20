@@ -185,3 +185,96 @@ footer {
     gap: 20px;
   }
 }
+/* ABOUT SECTION */
+.about-container {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-right {
+  width: 50%;
+}
+
+/* TITLE */
+.about-left h5 {
+  color: #7f8cff;
+  margin-bottom: 10px;
+}
+
+.about-left h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* BOX */
+.about-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+/* QUOTE */
+.quote {
+  background: #e8e9ff;
+  padding: 15px;
+  border-left: 4px solid #7f8cff;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* TAGS */
+.tags {
+  margin-top: 20px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #dfe3ff;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* SKILL BARS */
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  height: 6px;
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #7f8cff;
+  border-radius: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+}
