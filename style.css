@@ -413,3 +413,56 @@ form button:hover {
     width: 100%;
   }
 }
+/* INTERESTS SECTION */
+.interests {
+  background: linear-gradient(to right, #5f4bff, #7f8cff);
+  color: white;
+  text-align: center;
+}
+
+.interests-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TAG */
+.interests .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.interests h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.interests .subtitle {
+  opacity: 0.8;
+}
+
+/* INTEREST ITEMS */
+.interest-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.interest {
+  background: rgba(255,255,255,0.15);
+  padding: 12px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.interest:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-3px);
+}
